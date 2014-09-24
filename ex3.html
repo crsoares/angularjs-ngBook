@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf8" />
+		<script src="angular.js"></script>
+		<script src="modules/app.js"></script>
+		<script src="controllers/ParentController.js"></script>
+		<script src="controllers/ChildController.js"></script>
+	</head>
+	<body>
+		<div ng-controller="ParentController">
+			<div ng-controller="ChildController">
+				<a ng-click="sayHello()">Diga Olá</a>
+			</div>
+			{{person}}
+		</div>
+	</body>
+</html>

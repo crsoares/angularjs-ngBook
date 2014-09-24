@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf8" />
+		<script src="angular.js"></script>
+		<script src="modules/myApp.js"></script>
+		<script src="controllers/MyController.js"></script>
+		<script src="modules/emailParse.js"></script>
+	</head>
+	<body>
+		<div ng-controller="MyController">
+			<input ng-model="to" type="email" placeholder="Destinatário" />
+			<textarea ng-model="emailBody"></textarea>
+			<pre>__previewText__</pre>
+		</div>
+	</body>
+</html>

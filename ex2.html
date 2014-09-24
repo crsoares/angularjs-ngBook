@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf8" />
+		<script src="angular.js"></script>
+		<script src="modules/app.js"></script>
+		<script src="controllers/FirstController.js"></script>
+	</head>
+	<body>
+		<div ng-controller="FirstController">
+			<h4>A máquina mais simples adicionar sempre</h4>
+			<button ng-click="add(1)" class="button">Adicionar</button>
+			<a ng-click="subtract(1)" class="button alert">subtrair</a>
+			<h4>Contagem atual: {{counter}}</h4>
+		</div>
+	</body>
+</html>
